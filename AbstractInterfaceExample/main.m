@@ -7,11 +7,21 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ConcreetInterface.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        
+        /*bellow will fail becuase we attempt to create instance of abstract class*/
+        
+        //AbstractInterface *abstract = [[AbstractInterface alloc]init];
+        
+        /*bellow will fail if we comment out methods that we need to override in SubClass*/
+        
+        AbstractInterface *concreet = [[ConcreetInterface alloc]init];
+        [concreet methodToOverride];
+        int result = [concreet anotherMethodToOverride];
+        
     }
     return 0;
 }

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		52D9765C1A65797500F5473F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D9765B1A65797500F5473F /* main.m */; };
+		52D976631A6579B000F5473F /* AbstractInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D976621A6579B000F5473F /* AbstractInterface.m */; };
+		52D976671A65941000F5473F /* ConcreetInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D976661A65941000F5473F /* ConcreetInterface.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		52D976581A65797500F5473F /* AbstractInterfaceExample */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AbstractInterfaceExample; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D9765B1A65797500F5473F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		52D976621A6579B000F5473F /* AbstractInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractInterface.m; sourceTree = "<group>"; };
+		52D976641A6579DE00F5473F /* AbstractInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbstractInterface.h; sourceTree = "<group>"; };
+		52D976651A6593B600F5473F /* ConcreetInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreetInterface.h; sourceTree = "<group>"; };
+		52D976661A65941000F5473F /* ConcreetInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConcreetInterface.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				52D9765B1A65797500F5473F /* main.m */,
+				52D976621A6579B000F5473F /* AbstractInterface.m */,
+				52D976641A6579DE00F5473F /* AbstractInterface.h */,
+				52D976651A6593B600F5473F /* ConcreetInterface.h */,
+				52D976661A65941000F5473F /* ConcreetInterface.m */,
 			);
 			path = AbstractInterfaceExample;
 			sourceTree = "<group>";
@@ -118,7 +128,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52D976671A65941000F5473F /* ConcreetInterface.m in Sources */,
 				52D9765C1A65797500F5473F /* main.m in Sources */,
+				52D976631A6579B000F5473F /* AbstractInterface.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
